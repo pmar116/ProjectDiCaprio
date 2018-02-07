@@ -16,7 +16,7 @@
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/pacerCircle"
         android:layout_width="113dp"
         android:layout_height="122dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -28,7 +28,7 @@
         app:srcCompat="@drawable/circle" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/startButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Start"

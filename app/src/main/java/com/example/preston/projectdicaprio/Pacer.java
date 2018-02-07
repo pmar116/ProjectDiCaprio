@@ -6,6 +6,10 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.Button;
 
 public class Pacer extends AppCompatActivity {
 
@@ -16,6 +20,18 @@ public class Pacer extends AppCompatActivity {
 
         Toolbar myToolbar = (Toolbar)findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
+
+        final View circle = findViewById(R.id.pacerCircle);
+        final Animation anim = AnimationUtils.loadAnimation(this, R.anim.scale);
+
+        Button start = (Button) findViewById(R.id.startButton);
+        start.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                    circle.startAnimation(anim);
+
+            }
+        });
     }
 
     //menu icons are inflated

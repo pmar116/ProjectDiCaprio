@@ -24,7 +24,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Pacer"></activity>
+            android:name=".Pacer"
+            android:label="Biofeedback Pacer"></activity>
+        <activity
+            android:name=".Settings"
+            android:label="Settings"></activity>
     </application>
 
 </manifest>

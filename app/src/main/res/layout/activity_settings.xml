@@ -14,10 +14,4 @@
         android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
-
-    <PreferenceCategory
-        android:title="@string/settings_profile"
-        android:key="pref_key_settings_profile">
-
-    </PreferenceCategory>
 </android.support.constraint.ConstraintLayout>

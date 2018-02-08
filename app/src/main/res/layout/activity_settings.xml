@@ -14,6 +14,7 @@
         android:background="?attr/colorPrimary"
         android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+<<<<<<< HEAD
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
     <EditText
@@ -120,4 +121,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText4"
         app:layout_constraintVertical_bias="0.467" />
+=======
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <PreferenceCategory
+        android:title="@string/settings_profile"
+        android:key="pref_key_settings_profile">
+
+    </PreferenceCategory>
+>>>>>>> a4c5c11f479572ee76f69efc3476670de1197bc3
 </android.support.constraint.ConstraintLayout>

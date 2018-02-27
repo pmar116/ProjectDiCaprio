@@ -17,6 +17,7 @@ public class Settings extends AppCompatActivity {
     EditText ed4;
     Button b1;
     Toolbar myToolbar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,7 +29,7 @@ public class Settings extends AppCompatActivity {
         ed3=findViewById(R.id.editText3);
         ed4=findViewById(R.id.editText4);
         b1=findViewById(R.id.button);
-
+        //SettingDbHelper mDbHelper = new SettingDbHelper(getContext());
         ed1.setText(sharedpreferences.getString("name",""));
         ed2.setText(sharedpreferences.getString("age",""));
         ed3.setText(sharedpreferences.getString("weight",""));
@@ -43,6 +44,7 @@ public class Settings extends AppCompatActivity {
                 String weight  = ed3.getText().toString();
                 String height  = ed4.getText().toString();
                 SharedPreferences.Editor editor = sharedpreferences.edit();
+                //SwitchOut
                 editor.putString("name", name);
                 editor.putString("age", age);
                 editor.putString("weight", weight);
@@ -51,5 +53,7 @@ public class Settings extends AppCompatActivity {
             }
         });
 
+    }
+
 }
-}
+

@@ -10,6 +10,10 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import com.jjoe64.graphview.GraphView;
+import com.jjoe64.graphview.series.DataPoint;
+import com.jjoe64.graphview.series.LineGraphSeries;
+
 
 public class Pacer extends AppCompatActivity {
 
@@ -23,7 +27,15 @@ public class Pacer extends AppCompatActivity {
 
         final View circle = findViewById(R.id.pacerCircle);
         final Animation anim = AnimationUtils.loadAnimation(this, R.anim.scale);
-
+        GraphView graph = (GraphView) findViewById(R.id.graph);
+        LineGraphSeries<DataPoint> series = new LineGraphSeries<>(new DataPoint[] {
+                new DataPoint(0, 1),
+                new DataPoint(1, 5),
+                new DataPoint(2, 3),
+                new DataPoint(3, 2),
+                new DataPoint(4, 6)
+        });
+        graph.addSeries(series);
         Button start = (Button) findViewById(R.id.startButton);
         start.setOnClickListener(new View.OnClickListener() {
             @Override
